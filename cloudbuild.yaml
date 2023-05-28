@@ -10,8 +10,8 @@ steps:
 
 
 - name: 'gcr.io/cloud-builders/kubectl'
-  args: ['set', 'image', 'deployment/mydeployment', 'mynode=gcr.io/sit-faisal-alam-dc41412/node-web-app:$COMMIT_SHA']
+  args: ['set', 'image', 'deployment/mydeployment', 'mynode=gcr.io/sit323-23t1-pei-365a95e/webapp:$COMMIT_SHA']
   env:
   - 'CLOUDSDK_COMPUTE_ZONE=us-west1'
-  - 'CLOUDSDK_CONTAINER_CLUSTER=hello-cluster'
+  - 'CLOUDSDK_CONTAINER_CLUSTER=jinwei-pei'
 
